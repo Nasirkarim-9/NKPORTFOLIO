@@ -1,0 +1,411 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nasir Karim - Junior Full Stack Developer</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
+
+        
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home">NK</a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="./projects.html" class="nav-link">Projects</a>
+                    <a href="https://wa.me/+923161014331" class="nav-link">Contact</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+
+        
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">Junior Full Stack Developer</div>
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">Nasir Karim</span></h1>
+                    <p class="hero-description">
+                        Passionate developer crafting responsive web applications with React.js, Node.js, and modern technologies.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="./projects.html" class="btn btn-primary">View My Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-image">
+                        <img src="./img/WhatsApp Image 2026-02-09 at 3.10.27 PM.jpeg" alt="Nasir Karim - Profile Picture" class="profile-pic">
+                        <div class="image-placeholder fallback">
+                            <i class="fas fa-user"></i>
+                            <span>NK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+      
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Junior Full Stack Developer with strong foundation in modern web technologies. 
+                            I specialize in creating responsive, user-friendly web applications using 
+                            <strong>React.js</strong>, <strong>Node.js</strong>, and <strong>Bootstrap</strong>.
+                        </p>
+                        <p>
+                            Passionate about clean code, problem-solving, and delivering exceptional user experiences. 
+                            Always learning and staying updated with the latest industry trends.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h3>15+</h3>
+                                <span>Skills Mastered</span>
+                            </div>
+                            <div class="stat">
+                                <h3>30+</h3>
+                                <span>Projects Completed</span>
+                            </div>
+                            <div class="stat">
+                                <h3>100%</h3>
+                                <span>Client Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & <span class="highlight">Technologies</span></h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                        <div class="skill-tags">
+                            <span>React.js</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server"></i> Backend</h3>
+                        <div class="skill-tags">
+                            <span>Node.js</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Tools</h3>
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Netlify</span>
+                            <span>surge.sh</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-brain"></i> Soft Skills</h3>
+                        <div class="skill-tags">
+                            <span>Problem Solving</span>
+                            <span>Leadership</span>
+                            <span>Design</span>
+                            <span>Analytical</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nasir Karim - Junior Full Stack Developer</title>
+        <style>
+            
+            .projects-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+                gap: 1.5rem;
+                padding: 2rem 0;
+            }
+
+            .project-card {
+                background: #fff;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                transition: all 0.3s ease;
+                max-width: 260px;
+                height: 320px;
+            }
+
+            .project-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+            }
+
+            .project-image {
+                height: 140px;
+                width: 100%;
+                object-fit: cover;
+                position: relative;
+            }
+
+            .image-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(45deg, rgba(59,130,246,0.8), rgba(147,51,234,0.8));
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .project-card:hover .image-overlay {
+                opacity: 1;
+            }
+
+            .project-content {
+                padding: 1rem;
+            }
+
+            .project-title {
+                font-size: 1.1rem;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+                color: #1f2937;
+                line-height: 1.3;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            .project-description {
+                font-size: 0.9rem;
+                color: #6b7280;
+                margin-bottom: 1rem;
+                line-height: 1.4;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            .project-tech {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.4rem;
+                margin-bottom: 1rem;
+            }
+
+            .tech-badge {
+                background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+                color: white;
+                padding: 0.3rem 0.6rem;
+                border-radius: 20px;
+                font-size: 0.75rem;
+                font-weight: 500;
+            }
+
+            .project-links {
+                display: flex;
+                gap: 0.5rem;
+            }
+
+            .project-link {
+                flex: 1;
+                padding: 0.5rem 0.8rem;
+                text-decoration: none;
+                border-radius: 6px;
+                font-size: 0.85rem;
+                font-weight: 600;
+                text-align: center;
+                transition: all 0.2s ease;
+            }
+
+            .github-link {
+                background: #24292e;
+                color: white;
+            }
+
+            .demo-link {
+                background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+                color: white;
+            }
+
+            .project-link:hover {
+                transform: translateY(-1px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            }
+
+            .view-projects-btn {
+                display: inline-block;
+                background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+                color: white;
+                padding: 1rem 2.5rem;
+                border-radius: 50px;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 1.1rem;
+                margin-top: 2rem;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(59,130,246,0.4);
+            }
+
+            .view-projects-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(59,130,246,0.6);
+            }
+
+            @media (max-width: 768px) {
+                .projects-grid {
+                    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                    gap: 1rem;
+                }
+                .project-card {
+                    max-width: 100%;
+                    height: 300px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        
+        <section id="projects" class="projects-section">
+            <div class="container">
+             
+
+                   
+                </div>
+                
+                <div class="view-all">
+                    
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's work together!</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>nasir@example.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <p>github.com/nasirkarim-9</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <p>linkedin.com/in/nasir-karim</p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Tell me about your project..." rows="6" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <h3>Nasir Karim</h3>
+                        <p>Junior Full Stack Developer</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-section">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h4>Contact Info</h4>
+                            <ul>
+                                <li><i class="fas fa-envelope"></i> nasir@example.com</li>
+                                <li><i class="fas fa-map-marker-alt"></i> KARACHI, PAKISTAN</li>
+                                <li><i class="fas fa-phone"></i> +923362046062</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/Nasirkarim-9" target="_blank" class="social-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/nasir-karim" target="_blank" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com/nasirkarim" target="_blank" class="social-link" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com/nasirkarim" target="_blank" class="social-link" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://dribbble.com/nasirkarim" target="_blank" class="social-link" title="Dribbble">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; Nasir Karim❤️</p>
+                </div>
+            </div>
+        </footer>
+        
+
+        <script src="script.js"></script>
+    </body>
+    </html>
