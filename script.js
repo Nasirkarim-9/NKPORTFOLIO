@@ -1,4 +1,3 @@
-
 const cursor = document.querySelector('.cursor');
 const cursor2 = document.querySelector('.cursor2');
 
@@ -29,6 +28,14 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
+// Nav link click karne pe menu band ho jaye
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
+
 
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
@@ -45,16 +52,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth' });
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
     });
 });
 
-
-document.querySelector('.contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Thank you! Your message has been sent. I\'ll get back to you soon! 🚀');
-    e.target.reset();
-});
+// Contact form submit
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thank you! Your message has been sent. I\'ll get back to you soon! 🚀');
+        e.target.reset();
+    });
+}
 
 
 const observer = new IntersectionObserver((entries) => {
@@ -68,12 +80,3 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.skill-category, .project-card, .about-stats .stat').forEach(el => {
     observer.observe(el);
 });
-// alert("Yeh website protected hai!");
-// var password = prompt("Password enter karo:");
-
-// if (password !== "nasirkarim") {
-//     alert("Galat password! Access denied.");
-//     document.body.innerHTML = "";
-// } else {
-//     alert("Welcome!");
-// }
